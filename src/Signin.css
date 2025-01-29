@@ -1,0 +1,19 @@
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    padding: 25px;
+    margin: 25px;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: #c13a3a;
+  }
+  .container h1 {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
