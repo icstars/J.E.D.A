@@ -1,8 +1,13 @@
-function signin() {
+import './Signin.css'; // 
+
+function Signin() {
   return (
-    <div className="container">
-      <h1>Signin</h1>
+    <div className="signin-container">
+      <div className="container">
+        <h1>Sign In</h1>
+      </div>
     </div>
   );
 }
-export default signin;
+
+export default Signin;
