@@ -1,11 +1,12 @@
-import './SSsearchBar.css';
-import { useState } from 'react';
+import "./SSsearchBar.css";
+import { useState } from "react";
+import MenuBar from "./menuBar"; // Import the SideBar component
 
 export default function SearchBar() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State to control sidebar visibility
+  const [isMenubarOpen, setIsMenubarOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen); // Toggle sidebar state
+  const toggleMenubar = () => {
+    setIsMenubarOpen(!isMenubarOpen);
   };
 
   return (
@@ -30,17 +31,8 @@ export default function SearchBar() {
         </div>
       </div>
 
-      {/* Sidebar */}
-      <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <button className="arrow-btn" onClick={toggleSidebar}>
-          <img src="/arrow-icon.png" alt="Toggle Sidebar" />
-        </button>
-        {/* Add sidebar content here */}
-        <div className="sidebar-content">
-          <h2>Side Tab Content</h2>
-          {/* Add more sidebar content as needed */}
-        </div>
-      </div>
+      {/* Sidebar Component */}
+      <MenuBar isMenubarOpen={isMenubarOpen} toggleMenubar={toggleMenubar} />
     </div>
   );
 }

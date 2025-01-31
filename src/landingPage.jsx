@@ -1,8 +1,8 @@
 /*this is the SIGN IN PAGE*/
 
-import './SSsignInPage.css';
+import './SSLandingPage.css';
 
-export default function App() {
+export default function LandingPage() {
   return (
     <div className="root-container">
       <img
