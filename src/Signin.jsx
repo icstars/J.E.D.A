@@ -1,13 +1,35 @@
-import './Signin.css'; // 
+import { useState } from 'react';
+import './Signin.css'; // Make sure this file exists
 
-function Signin() {
+export default function App() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
-    <div className="signin-container">
-      <div className="container">
-        <h1>Sign In</h1>
-      </div>
+    <div className="root-container">
+      <img
+        src="/file.png"
+        alt="Hope Logo"
+        className="hope-logo"
+      />
+
+      
+      <input
+        type="text"
+        placeholder="Enter your username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        className="input-field"
+      />
+
+      {/* Password Input */}
+      <input
+        type="password"
+        placeholder="Enter your password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        className="input-field"
+      />
     </div>
   );
 }
-
-export default Signin;
