@@ -9,6 +9,6 @@ import Signin from './Signin.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Signin />
+    <SearchBar />
   </StrictMode>,
 )
