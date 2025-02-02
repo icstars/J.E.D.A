@@ -10,12 +10,12 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="root-container">
+    <div className="search-root-container">
       <div className="title-container">
         <h1 id="title">Threshold's HopeHub</h1>
 
         {/* Search Bar */}
-        <input type="text" className="search-bar" placeholder="Search..." />
+        <input type="text" className="search-bar" placeholder="Search" />
 
         {/* Button Container */}
         <div className="button-container">

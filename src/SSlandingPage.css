@@ -1,4 +1,4 @@
-/*this is the css file for the SIGN IN PAGE */
+/* this is the css file for the SIGN IN PAGE
 
 /* Global reset to remove margins and paddings */
 * {
@@ -6,16 +6,17 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+
   
   /* Root container styles */
-  .root-container {
+  .landing-root-container {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
-    background-color: #3d0a8a;
     overflow-x: hidden; /* Hide any horizontal overflow */
   }
   
@@ -26,7 +27,7 @@
     transition: transform 0.3s, filter 0.3s;
   }
   
-  /* Add hover effects */
+  Add hover effects
   .hope-logo:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0 2em #646cffaa);
@@ -36,7 +37,7 @@
   .sign-in-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #646cff;
+    /* background-color: rgb(123,82,162); */
     color: white;
     border: none;
     border-radius: 5px;
@@ -44,5 +45,5 @@
   }
   
   .sign-in-button:hover {
-    background-color: #5355e1;
-  }
+    background-color: rgb(73, 11, 131);;
+  } 
