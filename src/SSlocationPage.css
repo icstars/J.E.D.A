@@ -1,0 +1,100 @@
+/* Global reset  <<<<<    for the code below, not really sure what this means but it does something with the layout that I dont want it to do */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(235,234,222) 35%, rgb(0,155,222) 50%);
+    font-family: Arial, sans-serif;
+}
+
+/* Root container */
+.location-root-container {
+   
+    display: flex;
+    /*    <<<<   this would mess with the 3x3 grid system I have present for the desktop version idk why because it's literally a line to describe a grid but it does... sigh */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* width: 100%; << including this would mess with the scroll bar's location, try not to mess with it unless you really want to */
+    height: 100vh;
+    width:100vw;
+    padding: 20px;
+    overflow-x: hidden; /*for some reason this f#$ks with the ability to scroll up and down, kinda annoying but I'll keep it for now */
+}
+
+/* Search container */
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #646cff;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+}
+
+/* Locations grid */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 800px; /* <<<< this is the width of the grid, change this to change the width of the grid */
+    margin-top: 20px;
+}
+
+.location-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.location-item h3 {
+    color: #3d0a8a;
+    margin-bottom: 10px;
+}
+
+.location-item p {
+    color: #333;
+}
+
+/* Map container */
+.map-container {
+    width: 80%;
+    height: 200px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 1000px) {
+    .search-bar {
+        width: 80%;
+    }
+
+    .locations-grid {
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+}

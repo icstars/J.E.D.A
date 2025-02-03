@@ -1,20 +1,23 @@
-import './SSsearchBar.css';
-import { useState } from 'react';
+import "./SSsearchBar.css";
+import { useState } from "react";
+import MenuBar from "./menuBar"; // Import the SideBar component
 
 export default function SearchBar() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State to control sidebar visibility
+  const [isMenubarOpen, setIsMenubarOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen); // Toggle sidebar state
+  const toggleMenubar = () => {
+    setIsMenubarOpen(!isMenubarOpen);
   };
 
   return (
-    <div className="root-container">
+    <div className="search-root-container">
       <div className="title-container">
         <h1 id="title">Threshold's HopeHub</h1>
 
         {/* Search Bar */}
-        <input type="text" className="search-bar" placeholder="Search..." />
+        {/* <input type="text" className="search-bar" placeholder="Search" /> */}
+
+        <iframe id="chatbot" src="https://copilotstudio.microsoft.com/environments/Default-88227c99-d157-4dbe-8e33-d8b3fcc29577/bots/cr69f_hope1/webchat?__version__=2"></iframe>
 
         {/* Button Container */}
         <div className="button-container">
@@ -30,17 +33,8 @@ export default function SearchBar() {
         </div>
       </div>
 
-      {/* Sidebar */}
-      <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <button className="arrow-btn" onClick={toggleSidebar}>
-          <img src="public/menu.png" alt="Toggle Sidebar" style={{ width: '35px', height: '35px' }}/>
-        </button>
-        {/* Add sidebar content here */}
-        <div className="sidebar-content">
-          <h2>Side Tab Content</h2>
-          {/* Add more sidebar content as needed */}
-        </div>
-      </div>
+      {/* Sidebar Component */}
+      <MenuBar isMenubarOpen={isMenubarOpen} toggleMenubar={toggleMenubar} />
     </div>
   );
 }
