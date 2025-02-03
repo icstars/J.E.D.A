@@ -19,13 +19,13 @@ export default function SearchBar() {
         {/* Button Container */}
         <div className="button-container">
           <button className="icon-button">
-            <img src="/image1.png" alt="Button 1" />
+            <img src="public/location.png" alt="Button 1" />
           </button>
           <button className="icon-button">
-            <img src="/image2.png" alt="Button 2" />
+            <img src="public/contacts.png" alt="Button 2" />
           </button>
           <button className="icon-button">
-            <img src="/image3.png" alt="Button 3" />
+            <img src="public\recentmessages.png" alt="Button 3" />
           </button>
         </div>
       </div>
@@ -33,7 +33,7 @@ export default function SearchBar() {
       {/* Sidebar */}
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <button className="arrow-btn" onClick={toggleSidebar}>
-          <img src="/arrow-icon.png" alt="Toggle Sidebar" />
+          <img src="public/menu.png" alt="Toggle Sidebar" style={{ width: '35px', height: '35px' }}/>
         </button>
         {/* Add sidebar content here */}
         <div className="sidebar-content">
