@@ -4,7 +4,7 @@ import './SSLandingPage.css';
 
 export default function LandingPage() {
   return (
-    <div className="root-container">
+    <div className="landing-root-container">
       <img
         src="/file.png" // Use the correct relative path for the public folder
         alt="Hope Logo"

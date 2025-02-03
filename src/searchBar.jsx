@@ -10,12 +10,14 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="root-container">
+    <div className="search-root-container">
       <div className="title-container">
         <h1 id="title">Threshold's HopeHub</h1>
 
         {/* Search Bar */}
-        <input type="text" className="search-bar" placeholder="Search..." />
+        {/* <input type="text" className="search-bar" placeholder="Search" /> */}
+
+        <iframe id="chatbot" src="https://copilotstudio.microsoft.com/environments/Default-88227c99-d157-4dbe-8e33-d8b3fcc29577/bots/cr69f_hope1/webchat?__version__=2"></iframe>
 
         {/* Button Container */}
         <div className="button-container">
