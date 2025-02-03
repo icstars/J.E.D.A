@@ -1,6 +1,6 @@
 import "./SSsearchBar.css";
 import { useState } from "react";
-import MenuBar from "./menuBar"; // Import the SideBar component
+import MenuBar from "./MenuBar"; // Import the SideBar component
 
 export default function SearchBar() {
   const [isMenubarOpen, setIsMenubarOpen] = useState(false);

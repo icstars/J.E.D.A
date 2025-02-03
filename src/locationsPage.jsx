@@ -1,6 +1,6 @@
 import "./SSlocationPage.css";
 import { useState } from "react";
-import MenuBar from "./menuBar";
+import MenuBar from "./MenuBar";
 
 export default function LocationsPage() {
   const [isMenubarOpen, setIsMenubarOpen] = useState(false);
