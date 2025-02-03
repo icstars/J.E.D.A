@@ -10,7 +10,7 @@ export default function LocationsPage() {
   };
 
   return (
-    <div className="root-container">
+    <div className="location-root-container">
       <div className="title-container">
         <h1 id="title">Threshold Locations</h1>
 
