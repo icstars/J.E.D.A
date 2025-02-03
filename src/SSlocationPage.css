@@ -8,19 +8,23 @@
 html, body {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgb(0, 255, 255) 50%, #3d0a8a 50%);
+    background: linear-gradient(to bottom, rgb(235,234,222) 35%, rgb(0,155,222) 50%);
     font-family: Arial, sans-serif;
 }
 
 /* Root container */
-.root-container {
-    /* display: grid;   <<<<   this would mess with the 3x3 grid system I have present for the desktop version idk why because it's literally a line to describe a grid but it does... sigh */
+.location-root-container {
+   
+    display: flex;
+    /*    <<<<   this would mess with the 3x3 grid system I have present for the desktop version idk why because it's literally a line to describe a grid but it does... sigh */
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     /* width: 100%; << including this would mess with the scroll bar's location, try not to mess with it unless you really want to */
     height: 100vh;
+    width:100vw;
     padding: 20px;
+    overflow-x: hidden; /*for some reason this f#$ks with the ability to scroll up and down, kinda annoying but I'll keep it for now */
 }
 
 /* Search container */
