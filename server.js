@@ -1,12 +1,12 @@
 import express from 'express';
 import cors from 'cors';
-import mysql from 'mysql2';
+import mysql from 'mysql2'; 
 
-const express = require('express');
-const app = express();
+const express = require('express'); 
+const app = express();  
 
 app.get("/api", (req, res) => {
-    res.json({  });
+    res.json({  }); 
 }
 
 
