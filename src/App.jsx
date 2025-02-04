@@ -1,17 +1,22 @@
-/*this is the SIGN IN PAGE*/
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
+import SigninPage from './SigninPage';
+import LandingPage from './LandingPage';
+import LocationsPage from './LocationsPage';
+import MenuBar from './MenuBar';
+import SearchBar from './SearchBar';
 
 export default function App() {
   return (
-    <div className="root-container">
-      <img
-        src="/file.png" // Use the correct relative path for the public folder
-        alt="Hope Logo"
-        className="hope-logo"
-      />
-      <h1>Threshold's HopeHub</h1>
-      <button className="sign-in-button">Sign In</button>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/locations" element={<LocationsPage />} />
+        <Route path="/search" element={<SearchBar />} />
+        <Route path="/menu" element={<MenuBar />} />
+        <Route path="/signin" element={<SigninPage />} />
+      </Routes>
+    </Router>
   );
 }
