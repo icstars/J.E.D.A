@@ -11,8 +11,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/landing" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/search" element={<SearchBar />} />
         <Route path="/menu" element={<MenuBar />} />
