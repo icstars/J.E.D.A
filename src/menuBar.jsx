@@ -5,7 +5,7 @@ export default function menuBar({ isMenubarOpen, toggleMenubar }) {
   return (
     <div className={`menubar ${isMenubarOpen ? "open" : ""}`}>
       <button className="arrow-btn" onClick={toggleMenubar}>
-        <img src="/arrow-icon.png" alt="Toggle Menubar" />
+        <img src="public\open-menu.png" alt="Toggle Menubar" style={{ width: '35px', height: '35px' }}/>
       </button>
       <div className="menubar-content">
         <h2>Side Tab Content</h2>
