@@ -2,7 +2,7 @@ import "./SSlocationPage.css";
 import { useState } from "react";
 import MenuBar from "./MenuBar";
 
-export default function LocationsPage() {
+export default function Location() {
   const [isMenubarOpen, setIsMenubarOpen] = useState(false);
   
   const toggleMenubar = () => {
