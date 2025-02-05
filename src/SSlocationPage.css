@@ -40,10 +40,11 @@ html, body {
     max-width: 500px;
     padding: 12px;
     font-size: 16px;
-    border: 2px solid #646cff;
+    border: 2px solid #292e97;
     border-radius: 8px;
     outline: none;
     text-align: center;
+    color: #3d0a8a;
 }
 
 /* Locations grid */
