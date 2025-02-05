@@ -13,6 +13,8 @@ function App() {
           <p></p>
         </section>
         <section className="categories">
+        </section>
+      </main>
     </div> 
         
      
