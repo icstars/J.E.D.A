@@ -4,7 +4,7 @@ import './App.css';
 import Signin from './Signin';
 import Landing from './LandingPage';
 import Location from './LocationsPage';
-// import MenuBar from './MenuBar';
+import MenuBar from './MenuBar';
 import SearchBar from './SearchBar';
 
 export default function App() {
