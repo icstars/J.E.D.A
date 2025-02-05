@@ -191,7 +191,7 @@ Global reset to remove margins and paddings
 /* Sidebar content */
 .menubar-content {
   color: rgb(0, 0, 0);
-  text-align: center;
+  text-align: left;
   margin-top: 100px;
 }
 
@@ -200,6 +200,7 @@ Global reset to remove margins and paddings
   outline: none; /* Also removes any outline on button focus */
   background: none; /* Optional: remove background */
   padding: 10px; /* Adjust padding if needed */
+  
 }
 /* Remove the borders around the buttons */
 .menu-item {
@@ -208,6 +209,8 @@ Global reset to remove margins and paddings
   background: none; /* Optional: remove background */
   padding: 10px; /* Adjust padding if needed */
   font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'; /* Use the custom font */
+  font-size: xx-large; /* Adjust font size */
+
 }
 
 /* Hover effect */

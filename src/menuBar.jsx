@@ -19,7 +19,7 @@ export default function MenuBar({ isMenubarOpen, toggleMenubar }) {
       <div className="menubar-content">
         <h2>Main Menu</h2>
         <ul className="menu-list">
-          <li>
+          <p>
             <button
               className="menu-item"
               onClick={() => toggleSubmenu("parent1")}
@@ -28,12 +28,12 @@ export default function MenuBar({ isMenubarOpen, toggleMenubar }) {
             </button>
             {submenuStates["parent1"] && (
               <ul className="submenu">
-                <li>Teams</li>
-                <li>Outlook</li>
+                <h3>Teams</h3>
+                <h3>Outlook</h3>
               </ul>
             )}
-          </li>
-          <li>
+          </p>
+          <p>
             <button
               className="menu-item"
               onClick={() => toggleSubmenu("parent2")}
@@ -42,12 +42,12 @@ export default function MenuBar({ isMenubarOpen, toggleMenubar }) {
             </button>
             {submenuStates["parent2"] && (
               <ul className="submenu">
-                <li>Training Doc</li>
-                <li>Training Doc</li>
+                <h3>Training Doc</h3>
+                <h3>Training Doc</h3>
               </ul>
             )}
-          </li>
-          <li>
+          </p>
+          <p>
             <button
               className="menu-item"
               onClick={() => toggleSubmenu("parent3")}
@@ -56,11 +56,11 @@ export default function MenuBar({ isMenubarOpen, toggleMenubar }) {
             </button>
             {submenuStates["parent3"] && (
               <ul className="submenu">
-                <li>Locations </li>
-                <li>Recent Searches</li>
+                <h3>Locations </h3>
+                <h3>Recent Searches</h3>
               </ul>
             )}
-          </li>
+          </p>
         </ul>
       </div>
     </div>
