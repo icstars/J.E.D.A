@@ -67,7 +67,7 @@ Global reset to remove margins and paddings
   
   /* Heading (H1) styles */
   h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(146, 146, 146);
     font-size: 2.5rem; /* Adjust size as needed */
     text-align: center;
     margin: 0; /* Remove default margin */
