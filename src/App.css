@@ -12,7 +12,7 @@
 
 /* Root container styles */
 .root-container {
-  /* display: flex;       <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< this will make it stupid */
+  display: center;      /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< this will make it stupid */
   flex-direction: column; /* Stack elements vertically */
   justify-content: center;
   align-items: center;

@@ -15,7 +15,7 @@ html, body {
 /* Root container */
 .location-root-container {
    
-    display: flex;
+    display: center;
     /*    <<<<   this would mess with the 3x3 grid system I have present for the desktop version idk why because it's literally a line to describe a grid but it does... sigh */
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@ html, body {
 /* Search container */
 .search-container {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     padding: 20px 0;
 }
