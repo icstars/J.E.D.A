@@ -36,7 +36,7 @@ Global reset to remove margins and paddings
   height: 375px; /* Optimal height */
   border: none; /* Remove default iframe border */
   border-radius: 12px; /* Smooth rounded corners */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
   background: white; /* Ensure a clean background */
   transition: all 0.3s ease-in-out; /* Smooth transitions */
 }
@@ -54,6 +54,7 @@ Global reset to remove margins and paddings
   #chatbot {
     width: 95%; /* Use more space on smaller screens */
     height: 450px; /* Slightly smaller height for mobile */
+    box-shadow: 0px 30px 80px;
   }
 }
 
@@ -67,7 +68,8 @@ Global reset to remove margins and paddings
   
   /* Heading (H1) styles */
   h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(77, 145, 200);
+    font-family: 'Roboto', ;
     font-size: 2.5rem; /* Adjust size as needed */
     text-align: center;
     margin: 0; /* Remove default margin */
@@ -84,6 +86,7 @@ Global reset to remove margins and paddings
     outline: none;
     text-align: center;
     background-color: rgb(255, 245, 226);
+    
   }
   
   /* Button container */

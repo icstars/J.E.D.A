@@ -5,7 +5,7 @@ import SigninPage from './SigninPage';
 import LandingPage from './LandingPage';
 import LocationsPage from './LocationsPage';
 import MenuBar from './MenuBar';
-import SearchBar from './SearchBar';
+import SearchBar from './searchBar';
 
 export default function App() {
   return (

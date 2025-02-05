@@ -22,13 +22,13 @@ export default function SearchBar() {
         {/* Button Container */}
         <div className="button-container">
           <button className="icon-button">
-            <img src="public\location (4).png" alt="Button 1" style={{ width: '30px', height: '30px' }}/>
+            <img src="public\location (4).png" alt="Button 1" style={{ width: '65px', height: '50px' }}/>
           </button>
           <button className="icon-button">
-            <img src="public\contact (5).png" alt="Button 2" style={{ width: '30px', height: '30px' }} />
+            <img src="public\contact (5).png" alt="Button 2" style={{ width: '75px', height: '50px' }} />
           </button>
           <button className="icon-button">
-            <img src="public\chat-bubble (1).png" alt="Button 3" style={{ width: '30px', height: '30px' }} />
+            <img src="public\bookmark.png" alt="Button 3" style={{ width: '70px', height: '50px' }} />
           </button>
         </div>
       </div>
