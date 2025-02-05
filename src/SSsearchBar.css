@@ -10,7 +10,7 @@ Global reset to remove margins and paddings
     width: 100%; /* Full viewport width */
     height: 100%; /* Full viewport height */
     overflow: hidden; /* Hide any overflow */
-    /* display: flex; Use flexbox for centering */
+    display: center; /* Use flexbox for centering */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     
