@@ -1,17 +1,27 @@
-/*this is the SIGN IN PAGE*/
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+import "./SSlandingPage.css";
 
-import './SSLandingPage.css';
+export default function Landing() {
 
-export default function LandingPage() {
+  const navigate = useNavigate(); // Initialize the navigate function
+
   return (
     <div className="landing-root-container">
       <img
-        src="/file.png" // Use the correct relative path for the public folder
+        src="/file.png" // Ensure the logo file exists in your public folder
         alt="Hope Logo"
         className="hope-logo"
       />
       <h1>Threshold's HopeHub</h1>
-      <button className="sign-in-button">Sign In</button>
+      <button
+        className="sign-in-button"
+        onClick={() => {
+          // Navigate to the sign-in page
+          navigate("/signin");
+        }}
+      >
+        Sign In
+      </button>
     </div>
   );
 }
