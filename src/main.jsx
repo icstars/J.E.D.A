@@ -8,7 +8,7 @@ import LocationsPage from './locationsPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <LocationsPage />
+    <App />
   </StrictMode>,
 );
 
