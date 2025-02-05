@@ -26,7 +26,7 @@ const db = mysql.createConnection({
     database: 'test', // Replace with your database name
 });
 
-db.connect((err) => {
+db.connect((err) => { 
     if (err) {
         console.error('Error connecting to the database:', err);
         return;
