@@ -3,7 +3,7 @@ import { useState } from 'react';
 import MenuBar from './MenuBar';
 import './SSstaffDirectory.css';
 import { useNavigate } from 'react-router-dom';
-
+import HomeButton from "./homeButton";
 
 
 
@@ -21,9 +21,27 @@ const StaffDirectory = () => {
    
    <div className="staff-directory">
      
-     <div className="search-bar">
+<HomeButton />
+
+     {/* <button
+  id="home"
+  className="icon-button"
+  onClick={() => {
+    navigate("/search");
+  }}
+>
+  <img
+    src="/file.png" // Use the same image as on the landing page
+    alt="Home Button"
+    style={{ width: "65px", height: "50px" }} // Adjust dimensions if needed
+  />
+</button> */}
+
+     <div className="staff-search-bar">
        <input type="text" placeholder="Search by name" />
-       <button className="enter-icon">🔍</button>
+       <button className="enter-icon">
+          <img src="public\search_icon.png" alt="staff_search_button" style={{ width: '35px', height: '35px' }}/>
+       </button>
      </div>
 
 
@@ -38,7 +56,7 @@ const StaffDirectory = () => {
 
      <div className="staff-info">
        <div className="staff-row">
-         <img src="path/to/picture.jpg" alt="Staff" className="staff-picture" />
+         <img src="public\staff2.jpg" alt="Staff" className="staff-picture" />
          <div className="staff-address">
            <p>123 Work Address</p>
            <p>City, State, ZIP</p>
@@ -47,7 +65,7 @@ const StaffDirectory = () => {
 
         
        <div className="staff-row">
-         <img src="path/to/picture.jpg" alt="Staff" className="staff-picture" />
+         <img src="public\staff1.jpg" alt="Staff" className="staff-picture" />
          <div className="staff-address">
            <p>456 Work Address</p>
            <p>City, State, ZIP</p>

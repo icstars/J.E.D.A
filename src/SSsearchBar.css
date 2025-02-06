@@ -9,7 +9,7 @@ Global reset to remove margins and paddings
   html, body {
     width: 100%; /* Full viewport width */
     height: 100%; /* Full viewport height */
-    overflow: hidden; /* Hide any overflow */
+    overflow-y: auto; /* Enable vertical scrolling */
     display: center; /* Use flexbox for centering */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -64,6 +64,8 @@ Global reset to remove margins and paddings
     flex-direction: column; /* Arrange items in a column */
     align-items: center; /* Center items horizontally */
     gap: 20px; /* Space between elements */
+    height: 100%; /* Full height of the container */
+    width: 100%; /* Full width of the container */
   }
   
   /* Heading (H1) styles */
@@ -215,11 +217,31 @@ Global reset to remove margins and paddings
 
 /* Hover effect */
 .menu-item:hover {
-  /* background-color: #f0f0f0; Light background color on hover */
-  /* cursor: pointer; Change the cursor to indicate it's clickable */
+  background-color: #f0f0f0; /* Light background color on hover */
+  cursor: pointer; /* Change the cursor to indicate it's clickable */
 }
 
 /* Focus state for accessibility */
 .menu-item:focus {
   box-shadow: 0 0 5px rgba(0, 0, 255, 0.6); /* Adds a blue glow around the button */
+}
+
+
+#home {
+  transition: transform 0.3s, filter 0.3s;
+}
+
+/* Add hover effects */
+#home:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+#home {
+  position: absolute;
+  top: 20px; /* Adjust this to move it closer/farther from the top */
+  left: 20px; /* Adjust this to move it closer/farther from the left */
+  width: 100px; /* Button width */
+  height: 100px; /* Button height */
+  z-index: 10; /* Ensure it stays above other elements */
 }

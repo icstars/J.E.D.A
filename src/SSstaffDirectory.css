@@ -1,31 +1,48 @@
 .staff-directory {
-    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    align-content: center; /* Center items vertically */
+    margin-top: 175px;
+    gap: 20px; /* Space between elements */
+    height: 100%; /* Full height of the container */
+    width: 100%; /* Full width of the container */
   }
   
   .menu-bar {
     text-align: right;
   }
   
-  .search-bar {
+  .staff-search-bar {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
   }
   
-  .search-bar input {
+  .staff-search-bar input {
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px;
   }
-  
-  .search-bar .enter-icon {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-left: none;
-    border-radius: 0 4px 4px 0;
-    background-color: #f0f0f0;
+
+  .enter-icon{
+    padding: 2px;
+    border: 1px solid #a3009000;
+    background-color: #a3009000;
     cursor: pointer;
+    align-content: center;
+  }
+
+  .staff-search-bar{
+    padding: 2px;
+    border: 3px solid #0094c9;
+    /* border-left: none; */
+    border-radius: 10px;
+    background-color:#ffffff00;
+    cursor: pointer;
+    color: azure;
+    
   }
   
   .specialities-dropdown {
@@ -36,6 +53,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: rgb(148, 148, 148);
   }
   
   .staff-info {
@@ -58,3 +76,16 @@
   .staff-address {
     flex: 1;
   }
+
+  /* Custom logo styles */
+#home {
+  max-width: 300px;
+  max-height: 300px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+/* Add hover effects */
+#home:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 2em #646cffaa);
+}

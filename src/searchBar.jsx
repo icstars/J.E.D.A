@@ -2,6 +2,7 @@ import "./SSsearchBar.css";
 import { useState } from "react";
 import MenuBar from "./MenuBar"; // Import the SideBar component
 import { useNavigate } from "react-router-dom"; 
+import HomeButton from "./homeButton";
 
 
 export default function SearchBar() {
@@ -16,6 +17,23 @@ export default function SearchBar() {
 
   return (
     <div className="search-root-container">
+
+<HomeButton />
+
+{/* <button
+  id="home"
+  className="icon-button"
+  onClick={() => {
+    navigate("/search");
+  }}
+>
+  <img
+    src="/file.png" // Use the same image as on the landing page
+    alt="Home Button"
+    style={{ width: "65px", height: "50px" }} // Adjust dimensions if needed
+  />
+</button> */}
+
       <div className="title-container">
         <h1 id="title">Threshold's HopeHub</h1>
 
@@ -68,7 +86,7 @@ export default function SearchBar() {
             <img src="public\bookmark.png" alt="Button 3" style={{ width: '70px', height: '50px' }} />
 
           </button>
-          
+
 
 
         </div>

@@ -10,7 +10,7 @@ export default function Landing() {
       <img
         src="/file.png" // Ensure the logo file exists in your public folder
         alt="Hope Logo"
-        className="hope-logo"
+        id="hope-logo"
       />
       <h1>Threshold's HopeHub</h1>
       <button
