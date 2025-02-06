@@ -1,16 +1,37 @@
 import "./SSlocationPage.css";
 import { useState } from "react";
 import MenuBar from "./MenuBar";
+import { useNavigate } from "react-router-dom"; 
+import HomeButton from "./homeButton";
+
 
 export default function Location() {
   const [isMenubarOpen, setIsMenubarOpen] = useState(false);
   
+  const navigate = useNavigate(); // Initialize the navigate function
+
   const toggleMenubar = () => {
     setIsMenubarOpen(!isMenubarOpen);
   };
 
   return (
     <div className="location-root-container">
+<HomeButton />
+{/* <button
+  id="home"
+  className="icon-button"
+  onClick={() => {
+    navigate("/search");
+  }}
+>
+  <img
+    src="/file.png" // Use the same image as on the landing page
+    alt="Home Button"
+    style={{ width: "65px", height: "50px" }} // Adjust dimensions if needed
+  />
+
+</button> */}
+
       <div className="title-container">
         <h1 id="title">Threshold Locations</h1>
 

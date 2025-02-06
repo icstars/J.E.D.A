@@ -15,22 +15,23 @@ html, body {
 /* Root container */
 .location-root-container {
    
-    display: flex;
+    display: center;
     /*    <<<<   this would mess with the 3x3 grid system I have present for the desktop version idk why because it's literally a line to describe a grid but it does... sigh */
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     /* width: 100%; << including this would mess with the scroll bar's location, try not to mess with it unless you really want to */
-    height: 100vh;
-    width:100vw;
+    height: 100%;
+    width:100%;
     padding: 20px;
-    overflow-x: hidden; /*for some reason this f#$ks with the ability to scroll up and down, kinda annoying but I'll keep it for now */
+    /* overflow-x: hidden; for some reason this f#$ks with the ability to scroll up and down, kinda annoying but I'll keep it for now */
+    overflow-y: auto; 
 }
 
 /* Search container */
 .search-container {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     padding: 20px 0;
 }
@@ -75,7 +76,7 @@ html, body {
 
 /* Map container */
 .map-container {
-    width: 80%;
+    width: 50%;
     height: 200px;
     margin-top: 20px;
     background: rgba(255, 255, 255, 0.3);
@@ -99,3 +100,15 @@ html, body {
     }
 
 }
+
+#home {
+    max-width: 300px;
+    max-height: 300px;
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  /* Add hover effects */
+  #home:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }

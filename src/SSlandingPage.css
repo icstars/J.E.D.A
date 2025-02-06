@@ -13,22 +13,22 @@
   .landing-root-container {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
+    width: 100%; /* Full viewport width */
     overflow-x: hidden; /* Hide any horizontal overflow */
   }
   
   /* Custom logo styles */
-  .hope-logo {
+  #hope-logo {
     max-width: 300px;
     max-height: 300px;
     transition: transform 0.3s, filter 0.3s;
   }
   
-  Add hover effects
-  .hope-logo:hover {
+  /* Add hover effects */
+  #hope-logo:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0 2em #646cffaa);
   }

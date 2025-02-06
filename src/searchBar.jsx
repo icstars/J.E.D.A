@@ -1,6 +1,9 @@
 import "./SSsearchBar.css";
 import { useState } from "react";
 import MenuBar from "./MenuBar"; // Import the SideBar component
+import { useNavigate } from "react-router-dom"; 
+import HomeButton from "./homeButton";
+
 
 export default function SearchBar() {
   const [isMenubarOpen, setIsMenubarOpen] = useState(false);
@@ -9,8 +12,28 @@ export default function SearchBar() {
     setIsMenubarOpen(!isMenubarOpen);
   };
 
+  const navigate = useNavigate(); // Initialize the navigate function
+
+
   return (
     <div className="search-root-container">
+
+<HomeButton />
+
+{/* <button
+  id="home"
+  className="icon-button"
+  onClick={() => {
+    navigate("/search");
+  }}
+>
+  <img
+    src="/file.png" // Use the same image as on the landing page
+    alt="Home Button"
+    style={{ width: "65px", height: "50px" }} // Adjust dimensions if needed
+  />
+</button> */}
+
       <div className="title-container">
         <h1 id="title">Threshold's HopeHub</h1>
 
@@ -21,20 +44,57 @@ export default function SearchBar() {
 
         {/* Button Container */}
         <div className="button-container">
-          <button className="icon-button">
-            <img src="/image1.png" alt="Button 1" />
+
+
+          <button id='location' className="icon-button" 
+          
+          onClick={() => {
+            // Navigate to the search page
+            navigate("/location");
+          }}
+          >
+
+            <img src="public\location (4).png" alt="Button 1" style={{ width: '65px', height: '50px' }}/>
+            
           </button>
-          <button className="icon-button">
-            <img src="/image2.png" alt="Button 2" />
+
+
+
+          <button id='staff' className="icon-button"
+          
+          onClick={() => {
+            // Navigate to the search page
+            navigate("/staff");
+          }}
+          >
+
+            <img src="public\contact (5).png" alt="Button 2" style={{ width: '75px', height: '50px' }} />
+
           </button>
-          <button className="icon-button">
-            <img src="/image3.png" alt="Button 3" />
+
+
+
+
+          <button id='savedChats' className="icon-button"
+          
+          onClick={() => {
+            // Navigate to the search page
+            navigate("/savedResources");
+          }}
+          >
+
+            <img src="public\bookmark.png" alt="Button 3" style={{ width: '70px', height: '50px' }} />
+
           </button>
+
+
+
         </div>
       </div>
 
       {/* Sidebar Component */}
       <MenuBar isMenubarOpen={isMenubarOpen} toggleMenubar={toggleMenubar} />
+
     </div>
   );
 }
